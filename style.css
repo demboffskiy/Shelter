@@ -1,8 +1,12 @@
 body {
-    background-image: linear-gradient(140deg, rgba(91, 72, 58, 1), rgba(38, 36, 37, 1));
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0px;
+  background-image: linear-gradient(
+    140deg,
+    rgba(91, 72, 58, 1),
+    rgba(38, 36, 37, 1)
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px;
 }
 
 h1,
@@ -11,78 +15,108 @@ p,
 li,
 a,
 input {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    font-weight: 100;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* ?? там вроде как Arial везде */
+  /*
+font-family: Arial;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+ */
+  font-weight: 100;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 40px;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .header-title {
-    margin-bottom: 0;
-    color: rgba(241, 205, 179, 1);
+  margin-bottom: 0;
+  color: rgba(241, 205, 179, 1);
 }
 
 .subtitle {
-    margin-top: 0;
-    color: rgba(255, 255, 255, 1);
+  margin-top: 0;
+  color: rgba(255, 255, 255, 1);
 }
 
 ul.navig {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 35px;
-    margin-left: auto;
-    padding: 17px 0; 
-    list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 35px;
+  margin-left: auto;
+  padding: 17px 0;
+  list-style-type: none;
 }
 
 li a {
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  transition: all 0.5s;
 }
-
 li a:hover {
+  border-bottom: 2px solid rgba(241, 205, 179, 1);
+  transition: all 0.2s;
+}
+.active{
     border-bottom: 2px solid rgba(241, 205, 179, 1);
+    transition: all 0.2s;
 }
-
 div.info {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 90px;
-    margin-right: 40px; 
-    margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
-
+/* div.article в css очень плохо. пишешь только название класса раз ты все в классы записываешь .article и достаточно все элементы с классом артиклб получат такие стили
+если элемент один на странице и больше такого нет лучше писать id */
 div.article {
-    margin-top: 163px;
-    margin-bottom: 243px;
+  margin-top: 163px;
+  margin-bottom: 243px;
 }
 
 h2.info-title {
-    color: rgba(255, 255, 255, 1);
-    font-size: 3rem;
-    margin-bottom: 42px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3rem;
+  margin-bottom: 42px;
 }
 
 p.info-main {
-    color: rgba(205, 205, 205, 1);
-    margin-bottom: 42px;
+  color: rgba(205, 205, 205, 1);
+  margin-bottom: 42px;
 }
 
-input {
-    margin-top: 0px;
-    background-color: rgba(241, 205, 179, 1);
-    padding: 15px 45px;
-    border: none;
-    border-radius: 25px;
+button {
+  margin-top: 0px;
+  background-color: rgba(241, 205, 179, 1);
+  padding: 15px 45px;
+  border: none;
+  border-radius: 25px;
+  transition: all 2s;
+}
+span {
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+button:hover {
+  background-color: #fff;
+  transition: all 0.5s;
+  border: 2px solid;
+  border-color: #F1CDB3;
+  cursor: pointer;
 }
