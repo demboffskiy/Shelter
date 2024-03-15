@@ -11,108 +11,122 @@ body {
 
 h1,
 h2,
+h3,
+span {
+  font-family: Georgia;
+  font-weight: 400;
+  text-align: left;
+}
+
 p,
 li,
-a,
-input {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  /* ?? там вроде как Arial везде */
-  /*
-font-family: Arial;
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
- */
-  font-weight: 100;
+a {
+  font-family: Arial;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   margin: 0 40px;
+  align-items: center;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  align-items: center;
+
 }
 
 .header-title {
   margin-bottom: 0;
   color: rgba(241, 205, 179, 1);
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
 }
 
 .subtitle {
   margin-top: 0;
   color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.1em;
+  font-size: 13px;
+
 }
 
-ul.navig {
+ul {
   display: flex;
-  justify-content: space-between;
-  column-gap: 35px;
-  margin-left: auto;
-  padding: 17px 0;
   list-style-type: none;
+  gap: 35px;
 }
 
 li a {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   transition: all 0.5s;
+  line-height: 160%;
+  font-size: 15px;
 }
+
 li a:hover {
   border-bottom: 2px solid rgba(241, 205, 179, 1);
   transition: all 0.2s;
 }
-.active{
-    border-bottom: 2px solid rgba(241, 205, 179, 1);
-    transition: all 0.2s;
+.active {
+  border-bottom: 2px solid rgba(241, 205, 179, 1);
+  transition: all 0.2s;
 }
-div.info {
+.info {
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
   margin-right: 40px;
   margin-left: 40px;
 }
-/* div.article в css очень плохо. пишешь только название класса раз ты все в классы записываешь .article и достаточно все элементы с классом артиклб получат такие стили
-если элемент один на странице и больше такого нет лучше писать id */
-div.article {
+
+.article {
   margin-top: 163px;
   margin-bottom: 243px;
 }
 
 h2.info-title {
   color: rgba(255, 255, 255, 1);
-  font-size: 3rem;
+  font-size: 44px;
   margin-bottom: 42px;
+  line-height: 130%;
 }
 
 p.info-main {
   color: rgba(205, 205, 205, 1);
   margin-bottom: 42px;
+  line-height: 160%;
+  font-size: 15px;
 }
 
 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0px;
   background-color: rgba(241, 205, 179, 1);
-  padding: 15px 45px;
   border: none;
   border-radius: 25px;
   transition: all 2s;
+  cursor: pointer;
+  width: 207px;
+  height: 52px;
 }
+
 span {
   font-family: Georgia;
   font-size: 17px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 130%;
   letter-spacing: 0.06em;
   text-align: left;
 }
+
 button:hover {
   background-color: #fff;
   transition: all 0.5s;
