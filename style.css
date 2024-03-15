@@ -1,4 +1,8 @@
 body {
+  margin: 0px;
+}
+
+.page-1 {
   background-image: linear-gradient(
     140deg,
     rgba(91, 72, 58, 1),
@@ -6,7 +10,8 @@ body {
   );
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0px;
+  width: 1280px;
+  height: 908px;
 }
 
 h1,
@@ -27,7 +32,8 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0 40px;
+  position: relative;
+  left: 2%;
   align-items: center;
 }
 
@@ -59,6 +65,8 @@ ul {
   display: flex;
   list-style-type: none;
   gap: 35px;
+  position: relative;
+  right: 15%;
 }
 
 li a {
@@ -80,14 +88,16 @@ li a:hover {
 .info {
   display: flex;
   justify-content: space-between;
-  margin-top: 90px;
-  margin-right: 40px;
-  margin-left: 40px;
+  position: relative;
+  left: 2%;
+  width: 1200px;
+  height: 728px;
+  box-sizing: border-box;
 }
 
 .article {
-  margin-top: 163px;
-  margin-bottom: 243px;
+  position: relative; 
+  top: 30%;
 }
 
 h2.info-title {
@@ -102,6 +112,11 @@ p.info-main {
   margin-bottom: 42px;
   line-height: 160%;
   font-size: 15px;
+}
+
+.puppy {
+  position: relative;
+  top: 85px; left: 10px;
 }
 
 button {
@@ -133,4 +148,46 @@ button:hover {
   border: 2px solid;
   border-color: #F1CDB3;
   cursor: pointer;
+}
+
+.page-2 {
+  background-color:#fff;
+  width: 1280px;
+  height: 588px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 10%;
+  align-items: flex-end;
+}
+
+.about-info {
+  display: flex; 
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  right: 5%;
+}
+
+.about-info h3 {
+  font-family: Georgia;
+  font-size: 35px;
+  letter-spacing: 0.06em;
+  line-height: 130%;
+  margin-bottom: 0;
+}
+
+.about-info p {
+  font-family: Arial;
+  font-size: 15px; 
+  line-height: 160%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.about-info p:last-of-type {
+  margin-bottom: 14px;
 }
