@@ -3,15 +3,21 @@ body {
 }
 
 .page-1 {
+  min-height: 908px;
+  display: block;
   background-image: linear-gradient(
     140deg,
     rgba(91, 72, 58, 1),
     rgba(38, 36, 37, 1)
   );
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1280px;
-  height: 908px;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 h1,
@@ -32,8 +38,6 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  left: 2%;
   align-items: center;
 }
 
@@ -65,8 +69,6 @@ ul {
   display: flex;
   list-style-type: none;
   gap: 35px;
-  position: relative;
-  right: 15%;
 }
 
 li a {
@@ -85,19 +87,12 @@ li a:hover {
   border-bottom: 2px solid rgba(241, 205, 179, 1);
   transition: all 0.2s;
 }
+
 .info {
   display: flex;
   justify-content: space-between;
   position: relative;
-  left: 2%;
-  width: 1200px;
-  height: 728px;
-  box-sizing: border-box;
-}
-
-.article {
-  position: relative; 
-  top: 30%;
+  top: 15.1rem;
 }
 
 h2.info-title {
@@ -116,17 +111,17 @@ p.info-main {
 
 .puppy {
   position: relative;
-  top: 85px; left: 10px;
+  bottom: 9.7rem;
 }
 
-button {
-  display: inline-flex;
+.make-a-friend {
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 0px;
   background-color: rgba(241, 205, 179, 1);
   border: none;
-  border-radius: 25px;
+  border-radius: 26px;
   transition: all 2s;
   cursor: pointer;
   width: 207px;
@@ -142,7 +137,7 @@ span {
   text-align: left;
 }
 
-button:hover {
+.make-a-friend:hover {
   background-color: #fff;
   transition: all 0.5s;
   border: 2px solid;
@@ -152,24 +147,21 @@ button:hover {
 
 .page-2 {
   background-color:#fff;
-  width: 1280px;
-  height: 588px;
+  min-height: 588px;
 }
 
 .about {
   display: flex;
   justify-content: space-evenly;
-  position: relative;
-  top: 10%;
   align-items: flex-end;
+  position: relative;
+  top: 4.5rem;
 }
 
 .about-info {
   display: flex; 
   flex-direction: column;
   gap: 25px;
-  position: relative;
-  right: 5%;
 }
 
 .about-info h3 {
@@ -181,7 +173,6 @@ button:hover {
 }
 
 .about-info p {
-  font-family: Arial;
   font-size: 15px; 
   line-height: 160%;
   margin-bottom: 0;
@@ -190,4 +181,102 @@ button:hover {
 
 .about-info p:last-of-type {
   margin-bottom: 14px;
+}
+
+.page-3 {
+  background-color: rgba(246, 246, 246, 1);
+  min-height: 877px;
+}
+
+.page-3-header {
+  color: rgba(84, 84, 84, 1);
+  font-size: 35px;
+  position: relative;
+  top: 4.5rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+}
+
+.arrow {
+  border: 2px solid rgba(241, 205, 179, 1);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 50%;
+}
+
+.arrow:hover {
+  background-color: rgba(241, 205, 179, 1);
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; 
+}
+
+.cards-list {
+  gap: 90px;
+  position: relative;
+  right: 1.25rem;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(250, 250, 250, 1);
+  width: 270px;
+  height: 435px;
+}
+
+.card h4 {
+  text-align: center;
+  font-family: Georgia;
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.learn {
+  border: 2px solid rgba(241, 205, 179, 1);
+  width: 187px;
+  height: 52px; 
+  border-radius: 26px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.learn:hover {
+  background-color: rgba(241, 205, 179, 1);
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 261px; 
+  height: 52px;
+  background-color: rgba(241, 205, 179, 1);
+  border-radius: 26px;
+  border: none;
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-info:hover {
+  background-color: #fff;
+  transition: all 0.5s;
+  border: 2px solid;
+  border-color: #F1CDB3;
+  cursor: pointer;
 }
